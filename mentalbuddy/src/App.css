@@ -1,7 +1,9 @@
 .App {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+
   height: 100vh;
   background-color: #f0f0f0;
 }
@@ -10,8 +12,8 @@
   max-width: 500px;
   background-color: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 50px;
+  border-color: #0056b3;
   text-align: center;
 }
 
@@ -64,3 +66,280 @@
     transform: rotate(360deg);
   }
 }
+
+/* Add this updated CSS to your project's stylesheet */
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007BFF; /* Change title color to blue */
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333; /* Change label color to a dark gray */
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007BFF; /* Blue border for input */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add smooth transition effect */
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #007BFF; /* Change subtitle color to blue */
+}
+
+.recommendations ul {
+  list-style: none;
+  padding: 0;
+  border-top: 2px solid #007BFF; /* Add a blue border at the top of the recommendations list */
+}
+
+.recommendations li {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555; /* Change recommendation text color to a medium gray */
+}
+/* Custom CSS for vibrant and colorful styling */
+.container {
+  background-color: #f7d794;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  color: #6a0572; /* Purple title color */
+}
+
+.movie-detail {
+  background-color: #fbeae3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.movie-title {
+  font-size: 24px;
+  color: #ff6b6b; /* Red title color */
+}
+
+.movie-description {
+  font-size: 16px;
+  color: #333; /* Dark gray text color */
+}
+
+.movie-poster {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.movie-recommendations {
+  background-color: #d9bf77;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.recommendations-title {
+  font-size: 20px;
+  color: #fcf6f5; /* White title color */
+}
+
+.recommendation-item {
+  font-size: 16px;
+  color: #7e4f74; /* Mauve recommendation text color */
+}
+
+.search-container {
+  background-color: #faf3e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #7e4f74; /* Mauve border color */
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.search-item {
+  font-size: 16px;
+  color: #46639f; /* Blue search result text color */
+  cursor: pointer;
+  transition: color 0.3s; /* Add smooth transition effect */
+}
+
+.search-item:hover {
+  color: #007BFF; /* Brighter blue on hover */
+}
+
+/* Custom CSS for vibrant and colorful styling */
+
+.container {
+  background: linear-gradient(135deg, #ff9a8b, #ffc3a0); /* Gradient background */
+  padding: 20px;
+  text-align: center;
+  color: #333; /* Text color */
+}
+
+.title {
+  font-size: 32px;
+  color: #6a0572; /* Purple title color */
+}
+
+.button {
+  background-color: #ff6b6b; /* Red button background */
+  color: #fff; /* Button text color */
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Button hover effect */
+}
+
+.button:hover {
+  background-color: #ff5252; /* Lighter red on hover */
+}
+
+.recommended-book {
+  background: linear-gradient(135deg, #f4c542, #ffb142); /* Gradient book background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  color: #333; /* Text color */
+}
+
+.book-title {
+  font-size: 24px;
+  color: #ff6b6b; /* Red book title color */
+}
+
+.book-description {
+  font-size: 16px;
+  color: #444; /* Dark gray text color */
+  margin-top: 10px;
+}
+
+.book-cover {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-author {
+  font-size: 14px;
+  color: #888; /* Gray author text color */
+  margin-top: 10px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* RandomSiteButton.css */
+
+/* Style for the container */
+.container {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the heading */
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Style for the button */
+.btn {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+

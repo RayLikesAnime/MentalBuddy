@@ -24,16 +24,21 @@ function Search({ setSelectedMovie }) {
   };
 
   return (
-    <div>
+    <div className="search-container">
       <input
         type="text"
         placeholder="Search for a movie"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
+        className="search-input"
       />
-      <ul>
+      <ul className="search-results">
         {searchResults.map((movie) => (
-          <li key={movie.id} onClick={() => handleSelectMovie(movie)}>
+          <li
+            key={movie.id}
+            onClick={() => handleSelectMovie(movie)}
+            className="search-item"
+          >
             {movie.title}
           </li>
         ))}

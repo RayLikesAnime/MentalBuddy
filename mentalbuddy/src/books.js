@@ -18,20 +18,21 @@ function BookRecommender() {
   };
 
   return (
-    <div>
-      <h1>Feel-Good Book Recommender</h1>
-      <button onClick={fetchRandomFeelGoodBook}>Recommend me a book</button>
+    <div className="container">
+      <h1 className="title">Feel-Good Book Recommender</h1>
+      <button className="button" onClick={fetchRandomFeelGoodBook}>Recommend me a book</button>
       {recommendedBook && (
-        <div>
-          <h2>{recommendedBook.title}</h2>
+        <div className="recommended-book">
+          <h2 className="book-title">{recommendedBook.title}</h2>
           {recommendedBook.imageLinks && (
             <img
               src={recommendedBook.imageLinks.thumbnail}
               alt={`${recommendedBook.title} cover`}
+              className="book-cover"
             />
           )}
-          <p>{recommendedBook.description}</p>
-          <p>Author: {recommendedBook.authors && recommendedBook.authors.join(', ')}</p>
+          <p className="book-description">{recommendedBook.description}</p>
+          <p className="book-author">Author: {recommendedBook.authors && recommendedBook.authors.join(', ')}</p>
         </div>
       )}
     </div>

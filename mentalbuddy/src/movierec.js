@@ -22,11 +22,13 @@ function MovieRecommendations({ selectedMovie }) {
   }, [selectedMovie]);
 
   return (
-    <div>
-      <h3>Recommended Movies</h3>
+    <div className="movie-recommendations">
+      <h3 className="recommendations-title">Recommended Movies</h3>
       <ul>
         {recommendedMovies.map((movie) => (
-          <li key={movie.id}>{movie.title}</li>
+          <li key={movie.id} className="recommendation-item">
+            {movie.title}
+          </li>
         ))}
       </ul>
     </div>
