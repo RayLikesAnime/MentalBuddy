@@ -45,11 +45,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; */
+  /* align-items: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -72,7 +72,6 @@
 .container {
   max-width: 400px;
   margin: 0 auto;
-  text-align: center;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -103,7 +102,7 @@
 }
 
 .button {
-  background-color: #007BFF;
+  background-color: #d9bf77;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -114,7 +113,7 @@
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #b30095;
 }
 
 .subtitle {
@@ -138,7 +137,6 @@
 .container {
   background-color: #f7d794;
   padding: 20px;
-  text-align: center;
 }
 
 .title {

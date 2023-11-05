@@ -3,76 +3,15 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import styled from 'styled-components';
 import {useState, useEffect} from 'react'
+import MentalHealthArticles from './articles';
 
-// Define your primary and secondary keys
-const primaryApiKey = '18f35ef1b340438fb7a35bb491277a7a';
-const secondaryApiKey = '4f6a6c24ca484be4b6c1fc82e4727b71';
 
-const config = {
-  headers: {
-    'Primary-Key': primaryApiKey,
-    'Secondary-Key': secondaryApiKey,
-  },
-};
-
-const Container = styled.div`
-
-  background: linear-gradient(135deg, #ff9a8b, #ffc3a0);
-  padding: 20px;
-  text-align: center;
-  color: #333;
-`;
-
-const Title = styled.h1`
-  font-size: 32px;
-  color: #6a0572;
-`;
-
-const ContentContainer = styled.div`
-  background: linear-gradient(135deg, #f4c542, #ffb142);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  color: #333;
-`;
-
-const InfoTitle = styled.h2`
-  font-size: 24px;
-  color: #ff6b6b;
-`;
-
-const InfoText = styled.p`
-  font-size: 16px;
-  color: #444;
-  margin-top: 10px;
-`;
-
-const InfoLink = styled.a`
-  color: #007BFF;
-  text-decoration: none;
-`;
 
 function Greeting() {
-    const [info, setInfo] = useState('');
-  
-    useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const response = await axios.get('https://api.nhs.uk/mental-health', config);
-          // Handle the response as needed
-        } catch (error) {
-          console.error('Error fetching mental health information:', error);
-        }
-      };
-      
-      // Call fetchData when needed
-      fetchData();
-    }, []);
   return (
-    <header>
+    <div>
   <nav
-    class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
+    class="relative flex w-full  justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
     data-te-navbar-ref>
     <div class="flex w-full flex-wrap items-center justify-between px-3">
       <div class="flex items-center">
@@ -264,7 +203,7 @@ function Greeting() {
     <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Read More</button>
   </div> */}
 {/* </section> */}
-<Container>
+{/* <Container>
       <Title>Mental Health Information</Title>
       <ContentContainer>
         {info && (
@@ -277,8 +216,10 @@ function Greeting() {
           </>
         )}
       </ContentContainer>
-    </Container>
-</header>
+    </Container> */}
+<MentalHealthArticles/>
+</div>
+
 
 
   );
