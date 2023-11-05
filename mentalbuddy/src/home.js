@@ -56,6 +56,18 @@ function Greeting() {
   >Movie
   </Link>
           </li>
+          <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <Link
+    to="/books" // Use the "to" prop to specify the target route
+  >Book
+  </Link>
+          </li>
+          <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+          <Link
+    to="/website" // Use the "to" prop to specify the target route
+  >Website
+  </Link>
+          </li>
         </ul>
       </div>
     </div>
